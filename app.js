@@ -1,4 +1,5 @@
-import { asincroniaBasica } from "./apropiacion/index.js";
+import { asincroniaBasica, codigoBloqueante } from "./apropiacion/index.js";
 
 // Apropiacon
 asincroniaBasica();
+codigoBloqueante();
