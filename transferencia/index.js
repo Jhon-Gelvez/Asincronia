@@ -1,0 +1,1 @@
+export {procesoSolicitudes} from "./ejercicio1.js";
