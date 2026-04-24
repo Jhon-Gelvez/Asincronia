@@ -1,5 +1,5 @@
 import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync } from "./apropiacion/index.js";
-
+import { procesoSolicitudes } from "./transferencia/index.js";
 // Apropiacon
 
 // ejercicio 1
@@ -11,3 +11,8 @@ codigoBloqueante();
 consultaUsuarioCallback();
 consultaUsuarioPromesas();
 consultaUsuarioAsync();
+
+// transferencia
+
+// ejercicio 1
+procesoSolicitudes();
