@@ -7,7 +7,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | :--- | :--- | :--- |
  Jhon Jairo Gelvez Gomez | Líder (Arquitecto) | `Jhon-Gelvez` |
 | [Nombre del Aprendiz 2] | Desarrollador | `@usuario2` |
-| [Nombre del Aprendiz 3] | Desarrollador | `@usuario3` |
+| Jhon Sebastian Falcon Ruiz | Desarrollador | `falconsebas23-prog`  |
 
 ## 2. Canales de Comunicación
 Para mantener el orden y separar lo profesional de lo personal, usaremos los siguientes canales:
