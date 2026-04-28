@@ -1,4 +1,4 @@
-export const ordenes = [
+const ordenes = [
     { id: 1, cliente: "Ana", monto: 120000 },
     { id: 2, cliente: "Luis", monto: 80000 },
     { id: 3, cliente: "María", monto: 150000 }
