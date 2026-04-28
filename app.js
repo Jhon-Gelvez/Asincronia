@@ -1,5 +1,5 @@
 import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas, procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync } from "./apropiacion/index.js";
-import { procesoSolicitudes } from "./transferencia/index.js";
+import { procesarEntregas, procesoSolicitudes } from "./transferencia/index.js";
 // Apropiacon
 
 // ejercicio 1
@@ -25,3 +25,5 @@ procesarConAsync({ id: 3, cliente: "María", monto: 150000 });
 
 // ejercicio 1
 procesoSolicitudes();
+// ejercicio 2
+procesarEntregas();
