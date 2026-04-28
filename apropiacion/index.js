@@ -7,4 +7,4 @@ export {  procesar } from "./ejercicio5.js";
 
 
 export { consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync } from "./ejercicio8_pt1.js";
-export { procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync } from "./ejercicio8_pt2.js";
+export { procesarConCallbacks, procesarConPromesas, procesarConAsync } from "./ejercicio8_pt2.js";
