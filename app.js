@@ -1,4 +1,4 @@
-import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, tomarDatos, procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync } from "./apropiacion/index.js";
+import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas, procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync } from "./apropiacion/index.js";
 import { procesoSolicitudes } from "./transferencia/index.js";
 // Apropiacon
 
