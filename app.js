@@ -1,4 +1,4 @@
-import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas } from "./apropiacion/index.js";
+import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas, procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync } from "./apropiacion/index.js";
 import { procesoSolicitudes } from "./transferencia/index.js";
 // Apropiacon
 
@@ -17,7 +17,10 @@ procesosConPromesas();
 consultaUsuarioCallback();
 consultaUsuarioPromesas();
 consultaUsuarioAsync();
-
+// ejercicio 8 parte 2
+procesarOrdenCallback();
+procesarOrdenPromesas();
+procesarOrdenAsync();
 // transferencia
 
 // ejercicio 1
