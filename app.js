@@ -18,9 +18,9 @@ consultaUsuarioCallback();
 consultaUsuarioPromesas();
 consultaUsuarioAsync();
 // ejercicio 8 parte 2
-procesarOrdenCallback();
-procesarOrdenPromesas();
-procesarOrdenAsync();
+procesarConCallbacks({ id: 1, cliente: "Ana", monto: 120000 });
+procesarConPromesas({ id: 2, cliente: "Luis", monto: 80000 });
+procesarConAsync({ id: 3, cliente: "María", monto: 150000 });
 // transferencia
 
 // ejercicio 1
