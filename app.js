@@ -11,7 +11,7 @@ procesarPedido();
 // ejercicio 4
 procesosEncadenados();
 // ejercicio 5
-tomarDatos();
+procesosConPromesas();
 
 // ejercicio 8 parte 1
 consultaUsuarioCallback();
