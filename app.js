@@ -1,4 +1,4 @@
-import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas, procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync, manejoErroresPromesas } from "./apropiacion/index.js";
+import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas, procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync, manejoErroresPromesas, asyncAwait } from "./apropiacion/index.js";
 import { procesarEntregas, procesoSolicitudes, validarFormulario } from "./transferencia/index.js";
 // Apropiacon
 
@@ -13,7 +13,10 @@ procesosEncadenados();
 // ejercicio 5
 procesosConPromesas();
 // ejercicio 6
-manejoErroresPromesas()
+manejoErroresPromesas();
+// ejercicio 7
+asyncAwait();
+
 // ejercicio 8 parte 1
 consultaUsuarioCallback();
 consultaUsuarioPromesas();
@@ -22,11 +25,11 @@ consultaUsuarioAsync();
 procesarConCallbacks({ id: 1, cliente: "Ana", monto: 120000 });
 procesarConPromesas({ id: 2, cliente: "Luis", monto: 80000 });
 procesarConAsync({ id: 3, cliente: "María", monto: 150000 });
-// transferencia
 
+// transferencia
 // ejercicio 1
 procesoSolicitudes();
 // ejercicio 2
 procesarEntregas();
-// ejercicio 3 
+// ejercicio 3
 validarFormulario();
