@@ -8,3 +8,4 @@ export { asyncAwait } from "./ejercicio7.js";
 
 export { consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync } from "./ejercicio8_pt1.js";
 export { procesarConCallbacks, procesarConPromesas, procesarConAsync } from "./ejercicio8_pt2.js";
+export { consultarBloqueante, ejecutarPromesasParalelo, simuladorAsync } from "./ejercicio8_pt3.js";

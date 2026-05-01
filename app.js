@@ -1,4 +1,4 @@
-import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas, procesarOrdenCallback, procesarOrdenPromesas, procesarOrdenAsync, manejoErroresPromesas, asyncAwait } from "./apropiacion/index.js";
+import { asincroniaBasica, codigoBloqueante, consultaUsuarioCallback, consultaUsuarioPromesas, consultaUsuarioAsync, procesarPedido, procesosEncadenados, procesosConPromesas, manejoErroresPromesas, asyncAwait, procesarConCallbacks, procesarConPromesas, procesarConAsync, consultarBloqueante, ejecutarPromesasParalelo, simuladorAsync } from "./apropiacion/index.js";
 import { procesarEntregas, procesoSolicitudes, validarFormulario } from "./transferencia/index.js";
 // Apropiacon
 
@@ -7,7 +7,9 @@ asincroniaBasica();
 // ejercicio 2
 codigoBloqueante();
 // ejercicio 3
-procesarPedido();
+procesarPedido(() => {
+  console.log("Pedido completado");
+});
 // ejercicio 4
 procesosEncadenados();
 // ejercicio 5
@@ -25,11 +27,22 @@ consultaUsuarioAsync();
 procesarConCallbacks({ id: 1, cliente: "Ana", monto: 120000 });
 procesarConPromesas({ id: 2, cliente: "Luis", monto: 80000 });
 procesarConAsync({ id: 3, cliente: "María", monto: 150000 });
+// ejercicio 8 parte 3
+consultarBloqueante();
+ejecutarPromesasParalelo();
+simuladorAsync();
 
 // transferencia
 // ejercicio 1
 procesoSolicitudes();
 // ejercicio 2
-procesarEntregas();
+procesarEntregas([
+    { id: 1, destino: "Bogotá" },
+    { id: 2, destino: "Medellín" },
+    { id: 3, destino: "Cali" },
+]);
 // ejercicio 3
-validarFormulario();
+validarFormulario(
+  { correo: "usuario@example.com", documento: "12345678", nombre: "Juan" },
+  { correo: 1000, documento: 2000, usuario: 1500 }
+);
