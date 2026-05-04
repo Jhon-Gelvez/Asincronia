@@ -51,3 +51,9 @@ procesarPedido(
   1,
   { stock: 1000, costos: 2000, recomendaciones: 1500, factura: 1000 }
 );
+// ejercicio 5
+integrarServicios(
+  1,
+  { A: 1000, B: 2000, C: 1500, D: 1000 },
+  { A: false, B: false, C: false, D: false }
+);
