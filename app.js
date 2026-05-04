@@ -46,3 +46,8 @@ validarFormulario(
   { correo: "usuario@example.com", documento: "12345678", nombre: "Juan" },
   { correo: 1000, documento: 2000, usuario: 1500 }
 );
+// ejercicio 4 
+procesarPedido(
+  1,
+  { stock: 1000, costos: 2000, recomendaciones: 1500, factura: 1000 }
+);
